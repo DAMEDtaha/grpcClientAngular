@@ -1,0 +1,16 @@
+<h1>Ajouter un Compte</h1>
+<form (submit)="saveCompte()">
+  <label for="solde">Solde:</label>
+  <input id="solde" [(ngModel)]="compte.solde" name="solde" />
+
+  <label for="dateCreation">Date de Création:</label>
+  <input id="dateCreation" [(ngModel)]="compte.dateCreation" name="dateCreation" />
+
+  <label for="type">Type:</label>
+  <select id="type" [(ngModel)]="compte.type" name="type">
+    <option value="COURANT">Courant</option>
+    <option value="EPARGNE">Épargne</option>
+  </select>
+
+  <button type="submit">Save</button>
+</form>
